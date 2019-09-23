@@ -1,4 +1,12 @@
 <style>
+section {
+    display: none;
+}
+    
+ax:hover + section {
+    display: block;
+}
+
 a, u {
 color:white;    
 text-decoration:none;
@@ -12,30 +20,35 @@ body {
 }
 </style>
 <pre>
-wait..
+you enter the building and close the door behind you.
 
-this isn't a building!
+but instead of the inside of a building, you look around you and
+see the inside of a cave.
 
-it's a cave in disguise!
+<a style="text-decoration:underline">leave</>
 
 
+<a style="text-decoration:underline">go forward</>
 
 <div style="position: absolute; bottom: 0px">
-<a href="downtown"><-- </a>back
+
+
+
+                                           <ax><a href="downtown"><-- </a></ax>back
 
                                                                                           __________________
                                                                                          /                  \_
-                                                                                        / /|                  \_
+                                                                                        / /|                  \__
                                                                                        / / |                     \
-                                                                                      /  \_|                      \
+                                   <section>sds</>                                                   /  \_|                      \
                                                                                       \                           |
                                                                                        \/\/\/\/\/\/\/\            |
                                                                                                       \           |
                                                                                                        |          |
-                                                                                                       |          |
+                                                                                                  -->  |          |
                                                 __         _______                                     |          |
                                 _______________/  |       |       \_                  /\/\/\/\/\/\/\/\/           |
-__________________      _______/                  |ΛΛΛΛΛΛΛ|         \________________/                            |
+__________________      _______/                  |<a href="die">ΛΛΛΛΛΛΛ</a>|         \________________/                            |
                   |    |                                                                                           \
                   |    |                                                                                            \
-                  |ΛΛΛΛ|                                                                                             \
+                  |<a href="die">ΛΛΛΛ</a>|                                                                                             \
