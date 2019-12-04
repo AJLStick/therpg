@@ -1,17 +1,40 @@
-
+<style>
+html2 {
+  margin: auto;
+  width: 40%;
+height: 40%;
+  border: 10px solid black;
+  padding: 9px;
+}
+html {
+  margin: auto;
+  width: 40%;
+height: 40%;
+  border: 10px solid black;
+  padding: 0px;
+}
+g { background-color:grey;}
+r { text-decoration: none; color:red;}
+</style>
 <pre>
-======
-1 : EN
-===
-2 : TL
-===
-3 : E
-===
-4 : ?
-===
-5 : TI
-===
-[1 5 2 3 4]
-===========
+file1.txt|                                                           |_|<g>  </g>|<r>X</r>|
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+ <div align="center">:1EN:2TL:3E:4D:5TI:
 
-<a style="text-decoration:none;}" href="secretpass"><button>I've figured it out</a></button
+[1 5 2 3 4]</div>                                                       
+</html>
+
+
+
+<html2><label for="pswd">password: </label><input type="password" id="pswd"><input type="button" value="Submit" onclick="checkPswd();"><script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "entitled";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="xyzsecret";
+        }
+        else{
+            alert("WRONG!");
+        }
+    }
+</script>
