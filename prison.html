@@ -1,0 +1,32 @@
+
+<style>
+html{background-color:black; color:white}
+button {background-color:black; color:white}
+bl{color:#464646;background-color:#464646}
+wi{background-color:cyan}
+</style>
+<script type="text/javascript">
+function showDiv(toggle){
+document.getElementById(toggle).style.display = 'block';
+}
+</script>
+
+<pre>
+
+you wake up in a small room, most likely still
+on the ship.
+
+
+<div id="steel" style="display:none">a block of steel. probably what you were sleeping on.</div>
+<div id="window" style="display:none">a fake window.</div>
+ ___________________________________
+|                                   |
+|                       <placeholder onclick="showDiv('window')">___</placeholder>         |
+|                      <placeholder onclick="showDiv('window')">|_|_|</placeholder>        |
+|                      <placeholder onclick="showDiv('window')">| | |</placeholder>        |
+|                       <placeholder onclick="showDiv('window')">‾‾‾</placeholder>         |
+|      O                            |
+|<bl onclick="showDiv('steel')">xxxx</bl> /|\                           |
+|<bl onclick="showDiv('steel')">xxxx</bl> / \                           |
+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
