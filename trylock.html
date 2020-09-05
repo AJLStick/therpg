@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body><pre>
+<form>    <center>
+    <label for="pswd">enter lock code</label>[FOUR LETTERS]:
+
+    <input type="password" id="slip">
+
+    <input type="button" value="try code" onclick="checkPswd();" />
+</form>
+                                            <!--THE PASSWORD IS "SLIP", YOU DUNCE--!>
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "SLIP";
+        var password = document.getElementById("slip").value;
+        if (password == confirmPassword) {
+             window.location="lockopen.html";
+        }
+        else{
+            window.location="lockwrong.html";
+        }
+    }
+</script>
+</body>
+_____________________________________
+|                                ___|
+|                             O  |☊ |
+|        <SMALL> </SMALL>                   /|\ |O |
+|                            / \ |☋ |
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+</html>
