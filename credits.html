@@ -1,65 +1,274 @@
+<style>
 
-
-
-
-<style type="text/css" scoped>
-html {background-color:black;}
-.GeneratedMarquee {
-font-family:monospace;
-font-size:13px;
-line-height:1.3em;
-color:white;
+:root {
+  --cyan: cyan;
+  --white: #FFFFFF;
+  --black: #000000;
 }
+
+::selection {
+  color: #FFFFFF;
+  color: var(--white, #FFFFFF);
+  background: #FED636;
+  background: var(--cyan, #FED636);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background: #000000;
+  background: var(--black, #000000);
+}
+
+main {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin: auto;
+  font-family: 'Caveat';
+/*   font-family: 'Roboto'; */
+  font-size: 44px;
+  font-size: calc(22px + (36 - 22) * ((100vw - 980px) / (1400 - 980)));
+  white-space: nowrap;
+  color: #FFFFFF;
+  color: var(--white, #FFFFFF);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 980px) {
+  main {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    font-size: 36px;
+  }
+}
+
+/* Scroller */
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*animation: scroll 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite*/
+  animation: scroll 35s linear infinite
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  2% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  95% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+/* Sections */
+section {
+  position: relative;
+}
+
+section:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+/* List */
+dl {
+  font-size: .6em;
+}
+
+dl:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+dt,
+dd {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+dt {
+
+  
+}
+
+dd {
+  margin: 0;
+  
+
+  text-transform: uppercase;
+  color: #FED636;
+  color: var(--cyan, #FED636);
+}
+
+/* Typography */
+h3,
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: .8em;
+  text-align: center;
+  
+}
+
+h3 {
+  font-weight: 400;
+  font-size: .8em;
+}
+
+p {
+  font-weight: 400;
+  color: #FED636;
+  color: var(--cyan, #FED636);
+}
+
+span {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  color: var(--white, #FFFFFF);
+}
+
+b {
+  font-weight: 700;
+}
+
 </style>
-<center>
-<marquee class="GeneratedMarquee" direction="up" scrollamount="2" behavior="scroll"><pre>
-THE <font color=blue>R</font><font color=yellow>P</font><font color=red>G</font>
+<main><pre><Center>
+  <!-- BEGIN Scroller -->
+  <div>
 
-made possible by <a href="https://github.com">Github</a>
+    <!-- BEGIN Section -->
+    <section>
+      <p><font size=2>AJLStick's</font>
+<span><b>The RPG</b></span></p>
+    </section>
+    <!-- END Section -->
 
+    <!-- BEGIN -->
+    <article style="margin-bottom:0">
+      <h2>made possible by <a style="color:white" href="github.com">Github</a></h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>AJLStick</dd>
+        <dt>CSS</dt>
+        <dd>AJLStick</dd>
+<dd>W3schools.com</dd>
+        <dt>SFX</dt>
+        <dd>Nobody</dd>
+        <dt>Imogen Poots</dt>
+        <dd>Ellie</dd>
+        <dt>Mackenzie Davis</dt>
+        <dd>Chelsea</dd>
+        <dt>Jessica Lucas</dt>
+        <dd>Vera</dd>
+      </dl>
+    </article>
+    <!-- END -->
 
-HTML.......AJLStick
+    <!-- BEGIN -->
+    <article>
+      <h2>Credits</h2>
+      <dl>
+        <dt>Production Coordinator</dt>
+        <dd>Gina Roche</dd>
+        <dt>Second 2nd Assistant Director</dt>
+        <dd>Mary Michel D'onofrio</dd>
+        <dt>Additional Unit Production Manager</dt>
+        <dd>Devorah Devries</dd>
+        <dt>Additional 2nd Assistant Directors</dt>
+        <dd>Scott Friendman<br>Jason Hightower</dd>
+        <dt>Production Accountant</dt>
+        <dd>Sarah Lane</dd>
+        <dt>1st Assistant Accountant</dt>
+        <dd>Paul Bischot</dd>
+        <dt>Payroll Accountants</dt>
+        <dd>Craig T.Brown<br>Robert Whitfield</dd>
+        <dt>Accounting Clerk</dt>
+        <dd>Hannag Lovejoy</dd>
+        <dt>Additional Assistant Accountant</dt>
+        <dd>Nicole Bukowski</dd>
+        <dt>Additional Production Assistants</dt>
+        <dd>Josephine Rodriguez<br>Alison Bryan<br>Terrell Merrill<br>William Lapp<br>Jose Peter Gonzalez<br>Brian Ketchem</dd>
+      </dl>
 
+      <dl>
+        <dt>Art Department Coordinator</dt>
+        <dd>Jason Miller</dd>
+        <dt>Production Assistans</dt>
+        <dd>Kat Seemer<br>Adam Harlan<br>William Hopper</dd>
+      </dl>
 
-CSS........AJLStick
+      <dl>
+        <dt>Construction Coordinator</dt>
+        <dd>Richie Hebrank</dd>
+        <dt>Key Construction Grip</dt>
+        <dd>Glenn Fjotland</dd>
+        <dt>construction Grips</dt>
+        <dd>Stephen Girouard</dd>
+      </dl>
 
+      <dl>
+        <dt>Additional Construction Grips</dt>
+        <dd>Lee Shevett<br>Wiliam R. Clayton III</dd>
+        <dt>Key Carpenter</dt>
+        <dd>Peter Bundrick</dd>
+        <dt>Additional Carpenter</dt>
+        <dd>Bruce Paquette</dd>
+        <dt>Production Assistant</dt>
+        <dd>Mike Riolo</dd>
+        <dt>Additional Shop Craft</dt>
+        <dd>Ryan Bundrick<br>Joe Kupillar<br>James Wassman<br>Matthew Conover</dd>
+      </dl>
 
-Sound........Nobody
+      <dl>
+        <dt>Scenic Charge</dt>
+        <dd>Roman Rurovsky<br>Lorenzo Contessa</dd>
+        <dt>Scenics</dt>
+        <dd>Gennadi Barbush<br>Nikolai Bartossik<br>Darius Menard</dd>
+      </dl>
+    </article>
+    <!-- END -->
 
+    <!-- BEGIN Section -->
+    <section>
+      <h3>The End.</h3>
+    </section>
+    <!-- END Section -->
 
-GFX.....Also nobody
-
-
-STORY......AJLStick
-
-
-TOUCH-UP....Ashen Crane
-
-
-
-
-SPECIAL THANKS TO...
-
-
-
-
-Krinn
-
-oah
-
-<a href="https://HTML.AM">html.am</a>
-
-dungeonfloorsguy
-
-Aniwey
-
-gamehelp16
-
-Kailey 😈
-
-UltraDylanYT
-
-
-
-also, the password is "entitled".</marquee>
-
+  </div>
+  <!-- END Scroller -->
+</main>
+<!-- END Content-->
